@@ -1,0 +1,28 @@
+POST http://localhost:8080/gestao/create
+Content-Type: application/json
+Accept: application/json
+
+{
+    "descricao": "Almoço de Segunda",
+    "valor": 5,
+    "categoria": "Alimentação",
+    "email": "eric@gmail.com",
+    "data": "2025-06-10"
+}
+
+###
+GET http://localhost:8080/gestao/teste HTTP/1.1
+
+###
+GET http://localhost:8080/gestao/eric@gmail.com HTTP/1.1
+
+
+###
+GET http://localhost:8080/gestao/performance/sem-paginacao
+Content-Type: application/json
+Accept: application/json
+
+###
+GET http://localhost:8080/gestao/performance/com-paginacao/performance@gmail.com?page=0&size=10
+Content-Type: application/json
+Accept: application/json
